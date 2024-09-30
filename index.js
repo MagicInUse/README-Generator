@@ -3,7 +3,6 @@ import inquirer from 'inquirer';
 import fs from 'fs';
 import generateLicense from './utils/generateLicense.js';
 
-
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -40,7 +39,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Please choose a license for your project.',
-        choices: ['MIT', 'GNU GPLv3', 'Apache 2.0', 'ISC', 'None']
+        choices: ['MIT', 'GPL 3.0', 'Apache 2.0', 'ISC', 'None']
     },
     {
         type: 'input',
@@ -75,8 +74,8 @@ ${data.description}
 - [Usage](#usage)
 - [Contribution](#contribution)
 - [Test](#test)
-- [Questions](#questions)
 - [License](#license)
+- [Questions](#questions)
 ## Installation
 ${data.installation}
 ## Usage

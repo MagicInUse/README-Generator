@@ -1,7 +1,7 @@
 
 # NodeJS README Generator
 ## Description
-This lightweight CLI (Command Line Interface) tool will help you create a detailed and useful README.md file for your GitHub repositories. Utilizing the Inquirer and FS packages, we take input through the CLI and create a fresh README.md file. The extra import of generateLicense.js is necessary for the project's requirements.
+This lightweight CLI (Command Line Interface) tool will help you create a detailed and useful README.md file for your GitHub repositories. Utilizing the Inquirer and FS packages, we take input through the CLI and create a fresh README.md file. The extra import of generateLicense.js is necessary for the project's requirements. A link to a video showcasing this application can be found [here](https://youtu.be/gALUvhSLToE)
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)

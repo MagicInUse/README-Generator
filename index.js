@@ -1,7 +1,8 @@
 // TODO: Include packages needed for this application
-import inquirer from 'inquirer';
-import fs from 'fs';
-import licenseGen from './utils/generateLicense.js';
+const inquirer = require('inquirer');
+const fs = require('fs');
+const generateLicense = require('./utils/generateLicense.js');
+
 
 // TODO: Create an array of questions for user input
 const questions = [];
@@ -64,7 +65,7 @@ function init() {
         }
     ])
         .then((data) => {
-            const licenseSection = licenseGen(data.license);
+            const licenseSection = generateLicense(data.license);
             const markdown = `
 # ${data.title}
 ## Description
@@ -85,7 +86,7 @@ ${data.contribution}
 ## Test
 ${data.test}
 ## License
-${licenseSection};
+${licenseSection}
 ## Questions
 If you have any questions, please feel free to reach out to me at [${data.email}](mailto:${data.email}). You can also find me on GitHub: [${data.github}](${data.github}).`;
             writeToFile(markdown);

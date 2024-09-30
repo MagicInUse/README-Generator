@@ -39,7 +39,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Please choose a license for your project.',
-        choices: ['MIT', 'GPL 3.0', 'Apache 2.0', 'ISC', 'None']
+        choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'None']
     },
     {
         type: 'input',
@@ -86,7 +86,7 @@ ${data.contribution}
 ${data.test}
 ${licenseSection}
 ## Questions
-If you have any questions, please feel free to reach out to me at [${data.email}](mailto:${data.email}). You can also find me on GitHub: [${data.github}](https://.github.com/${data.github}).`;
+If you have any questions, please feel free to reach out to me at [${data.email}](mailto:${data.email}). You can also find me on GitHub: [${data.github}](https://github.com/${data.github}).`;
             writeToFile(markdown);
         });
 }

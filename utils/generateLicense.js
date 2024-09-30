@@ -7,7 +7,7 @@ function renderLicenseBadge(license) {
     case "Apache 2.0":
       return `![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`;
     case "GPL 3.0":
-      return `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
+      return `![License](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
     case "BSD 3":
       return `![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)`;
     default:
@@ -24,7 +24,7 @@ function renderLicenseLink(license) {
     case "Apache 2.0":
       return `[Apache 2.0](https://opensource.org/licenses/Apache-2.0)`;
     case "GPL 3.0":
-      return `[GPL 3.0](https://www.gnu.org/licenses/gpl-3.0)`;
+      return `[GPL 3.0](https://opensource.org/licenses/GPL-3.0)`;
     case "BSD 3":
       return `[BSD 3](https://opensource.org/licenses/BSD-3-Clause)`;
     default:
@@ -45,8 +45,7 @@ function renderLicenseSection(license) {
 function generateLicense(data) {
   return `## License
 ${renderLicenseBadge(data)} ${renderLicenseLink(data)}
-${renderLicenseSection(data)}
-`;
+${renderLicenseSection(data)}`;
 }
 
 export default generateLicense;
